@@ -9,6 +9,7 @@ var config = _.merge({
   cache: true,
   devtool: 'eval-source-map',
   entry: [
+    'react-hot-loader/patch',
     'webpack-dev-server/client?http://0.0.0.0:0',
     'webpack/hot/only-dev-server',
   ].concat(baseConfig.entry),
@@ -36,7 +37,13 @@ config.module.rules.push({
     path.join(__dirname, '/../src'),
   ],
   test: /\.(js|jsx)$/,
-  use: ['react-hot-loader', 'babel-loader'],
+  use: {
+    loader: 'babel-loader',
+    options: {
+      plugins: ['react-hot-loader/babel'],
+      presets: [['es2015', {modules: false}], 'react', 'stage-0'],
+    },
+  },
 })
 
 module.exports = config
