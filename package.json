@@ -62,7 +62,7 @@
     "normalize.css": "7.0.0",
     "null-loader": "0.1.1",
     "open": "0.0.5",
-    "package-json-validator": "0.6.2",
+    "package-json-validator": "0.6.3",
     "puppeteer": "0.13.0",
     "query-string": "5.0.1",
     "radium": "0.19.6",
