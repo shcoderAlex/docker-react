@@ -65,7 +65,7 @@
     "null-loader": "0.1.1",
     "open": "0.0.5",
     "package-json-validator": "0.6.3",
-    "puppeteer": "0.13.0",
+    "puppeteer": "1.0.0",
     "query-string": "5.0.1",
     "radium": "0.21.0",
     "raw-loader": "0.5.1",
